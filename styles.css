@@ -3,12 +3,41 @@ body{
     padding: 0;
     color: #fff;
 }
+div{
+    height: 200px;
+    margin: 3px;
+}
 .container{
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "content-1 content-1 aside-1"
+    "content-2 content-2 aside-2"
+    "footer footer footer"
 }
 .container div:nth-child(even){
     background-color: #1E1E1E;
 }
 .container div:nth-child(odd){
     background-color: #0477BD;
+}
+.header{
+    grid-area: header;
+}
+.content-1{
+    grid-area: content-1;
+}
+.content-2{
+    grid-area: content-2;
+}
+.aside-1{
+    grid-area: aside-1;
+}
+.aside-2{
+    grid-area: aside-2;
+}
+.footer{
+    grid-area: footer;
 }
