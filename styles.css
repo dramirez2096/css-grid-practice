@@ -1,0 +1,9 @@
+.container{
+    display: grid;
+}
+.side-bar{
+    background-color: #eee;
+}
+.main{
+    background-color: #ddd;
+}
