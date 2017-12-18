@@ -1,9 +1,14 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
 .container{
     display: grid;
 }
-.side-bar{
-    background-color: #eee;
+.container div:nth-child(even){
+    background-color: #1E1E1E;
 }
-.main{
-    background-color: #ddd;
+.container div:nth-child(odd){
+    background-color: #0477BD;
 }
