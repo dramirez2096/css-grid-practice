@@ -41,3 +41,23 @@ div{
 .footer{
     grid-area: footer;
 }
+
+@media only screen and (max-width: 1000px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "content-1 content-1 content-1"
+        "content-2 content-2 content-2"
+        "aside-1 aside-1 aside-1"
+        "aside-2 aside-2 aside-2"
+        "footer footer footer"
+    }
+}
+@media only screen and (max-width: 750px) {
+    div{
+        height: 100px;
+    }  
+}
